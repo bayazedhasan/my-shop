@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Eggs",
+    "items": 154,
+    "discount": 0,
+    "image": "https://i.postimg.cc/5NgXwXRy/c-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Clothes",
+    "items": 320,
+    "discount": 30,
+    "image": "https://i.postimg.cc/wT21h1Gv/c-2.png"
+  },
+  {
+    "id": 3,
+    "name": "Watches",
+    "items": 65,
+    "discount": 0,
+    "image": "https://i.postimg.cc/qMwN8N57/c-3.png"
+  },
+  {
+    "id": 4,
+    "name": "Dresses",
+    "items": 548,
+    "discount": 15,
+    "image": "https://i.postimg.cc/HszrQrhc/c-4.png"
+  },
+  {
+    "id": 5,
+    "name": "Glasses",
+    "items": 48,
+    "discount": 10,
+    "image": "https://i.postimg.cc/VLgJjJVJ/c-5.png"
+  },
+  {
+    "id": 6,
+    "name": "Cosmatics",
+    "items": 59,
+    "discount": 0,
+    "image": "https://i.postimg.cc/65c8d8mT/c-6.png"
+  }
+]

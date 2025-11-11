@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.cp{
+    color: #29A56C;
+}
+.bgc{
+    background-color: #29A56C;
+}

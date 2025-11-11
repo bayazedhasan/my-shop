@@ -1,0 +1,38 @@
+[
+  {
+    "img": "https://i.postimg.cc/QMGsSVfY/icon-1.png",
+    "title": "Best Prices & Offers",
+    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+    "button": "Read More"
+  },
+  {
+    "img": "https://i.postimg.cc/nVyJnXJM/icon-2.png",
+    "title": "Wide Assortment",
+    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+    "button": "Read More"
+  },
+  {
+    "img": "https://i.postimg.cc/Y9v5HHDm/icon-3.png",
+    "title": "Free Delivery",
+    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+    "button": "Read More"
+  },
+  {
+    "img": "https://i.postimg.cc/gkFff1VT/icon-4.png",
+    "title": "Easy Returns",
+    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+    "button": "Read More"
+  },
+  {
+    "img": "https://i.postimg.cc/hjQ5Y0hr/icon-5.png",
+    "title": "100% Satisfaction",
+    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+    "button": "Read More"
+  },
+  {
+    "img": "https://i.postimg.cc/htCZPYmW/icon-6.png",
+    "title": "Great Daily Deal",
+    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+    "button": "Read More"
+  }
+]

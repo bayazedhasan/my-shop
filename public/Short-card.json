@@ -1,0 +1,27 @@
+[
+  {
+    "img": "https://i.postimg.cc/QMGsSVfY/icon-1.png",
+    "name": "Best Prices & Offers",
+    "short_description": "Orders $50 or more"
+  },
+  {
+    "img": "https://i.postimg.cc/nVyJnXJM/icon-2.png",
+    "name": "Wide Assortment",
+    "short_description": "24/7 amazing services"
+  },
+  {
+    "img": "https://i.postimg.cc/Y9v5HHDm/icon-3.png",
+    "name": "Free Delivery",
+    "short_description": "When you sign up"
+  },
+  {
+    "img": "https://i.postimg.cc/gkFff1VT/icon-4.png",
+    "name": "Easy Returns",
+    "short_description": "Within 30 days"
+  },
+  {
+    "img": "https://i.postimg.cc/hjQ5Y0hr/icon-5.png",
+    "name": "Great Daily Deal",
+    "short_description": "Mega Discounts"
+  }
+]
