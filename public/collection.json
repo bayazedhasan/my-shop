@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Women's Collection",
+    "discount": "30% Off",
+    "bgImg": "https://i.postimg.cc/KjDsRBFk/12.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Kid's Collection",
+    "discount": "40% Off",
+    "bgImg": "https://i.postimg.cc/rsNYKxcS/13.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Men's Collection",
+    "discount": "20% Off",
+    "bgImg": "https://i.postimg.cc/7hnQf0D3/14.jpg"
+  }
+]

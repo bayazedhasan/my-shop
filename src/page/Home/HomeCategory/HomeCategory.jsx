@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import useData from "../../../Hooks/useData.js";
 
 const HomeCategory = () => {
@@ -6,6 +7,7 @@ const HomeCategory = () => {
         <div className='grid grid-cols-6 gap-6 container mx-auto px-24 pt-10'>
             {
                 Categories.map(category=>(
+                    <Link to={"/shop"}>
                     <div>
                         <div className=' relative flex flex-col items-center border bg-[#F7F7F7] border-none p-5 '>
                             <img className='w-20 p-1' src={category.image} alt="" />
@@ -16,6 +18,7 @@ const HomeCategory = () => {
                             </div>
                         </div>
                     </div>
+                    </Link>
                 ))
             }
         </div>

@@ -4,7 +4,8 @@ import { MdCall } from 'react-icons/md';
 
 const TopHeader = () => {
     return (
-        <div className='flex justify-between items-center container mx-auto px-6 p-3 bg-[#F8F8FB]'>
+        <div className='bg-[#F8F8FB]'>
+            <div className='flex justify-between items-center container mx-auto px-6 p-3 '>
             <div className='flex items-center gap-1'>
                 <MdCall />
                 <p className='pr-2 text-gray-500 text-xs font-semibold'>01791971760</p>
@@ -22,6 +23,7 @@ const TopHeader = () => {
                 <p>English</p>
                 <p>Contact Us</p>
             </div>
+        </div>
         </div>
     );
 };
