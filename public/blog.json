@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Summer Collection",
+    "img": "https://i.postimg.cc/j5ZTTStD/9.png",
+    "btn": "Read More"
+  },
+  {
+    "title": "Winter Sale",
+    "img": "https://i.postimg.cc/wv6znm8q/10.png",
+    "btn": "Read More"
+  },
+  {
+    "title": "New Arrivals",
+    "img": "https://i.postimg.cc/wv6znm8J/11.png",
+    "btn": "Read More"
+  },
+  {
+    "title": "Accessories",
+    "img": "https://i.postimg.cc/RFMm2H5n/12.png",
+    "btn": "Read More"
+  },
+  {
+    "title": "Limited Edition",
+    "img": "https://i.postimg.cc/pT2v3Fbz/13.png",
+    "btn": "Read More"
+  }
+]

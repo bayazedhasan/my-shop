@@ -8,6 +8,8 @@ import CollectionCart from './CollectionCart/CollectionCart';
 import NewProduct from './NewProduct/NewProduct';
 import SupportCart from './SupportCart/SupportCart';
 import CardCarousel from './CardCarousel/CardCarousel';
+import Blog from '../Blog/Blog';
+import ShardBlog from '../Blog/ShardBlog';
 const Home = () => {
     return (
         <div>
@@ -20,6 +22,7 @@ const Home = () => {
              <CollectionCart></CollectionCart>
              <SupportCart></SupportCart>
              <CardCarousel></CardCarousel>
+             <ShardBlog></ShardBlog>
              <Footer></Footer>
            
         </div>

@@ -19,7 +19,13 @@ const useData = () => {
         .then(res=> res.json())
         .then(data=>setCollectionCart(data))
     },[])
-    return {Categories,products,collectionCart}
+    const [blogs,setBlogs] = useState([]);
+    useEffect(()=>{
+        fetch("blog.json")
+        .then(res=> res.json())
+        .then(data=>setBlogs(data))
+    },[])
+    return {Categories,products,collectionCart,blogs}
 };
 
 export default useData;
