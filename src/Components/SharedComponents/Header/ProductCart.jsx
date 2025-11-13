@@ -1,5 +1,6 @@
 import React from 'react';
 import { MdOutlineStar } from 'react-icons/md';
+import { Link } from 'react-router';
 
 const ProductCart = ({product}) => {
     return (
@@ -9,6 +10,7 @@ const ProductCart = ({product}) => {
                     
                     className="border hover:scale-105 duration-300 cursor-pointer border-gray-200 w-60 rounded-md flex flex-col justify-between h-[380px] bg-white"
                 >
+                    <Link to={`/shop/${product.id}`}>
                     <div className="flex-1 flex flex-col">
                         <div className="  ">
                             <img
@@ -35,6 +37,7 @@ const ProductCart = ({product}) => {
                             </div>
                         </div>
                     </div>
+                    </Link>
                 </div>
             
         </div>
