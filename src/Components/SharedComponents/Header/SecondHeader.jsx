@@ -27,7 +27,6 @@ const SecondHeader = () => {
                     <NavLink to="/">Home</NavLink>
                     <MdArrowDropDown />
                 </div>
-                    <NavLink className='transition-transform hover:scale-110 cursor-pointer' to="/about">About</NavLink>
                 <div className='flex items-center transition-transform hover:scale-110 cursor-pointer'>
                     <NavLink to="/shop">Shop</NavLink>
                     <MdArrowDropDown />
@@ -36,6 +35,7 @@ const SecondHeader = () => {
                     <NavLink to="/blog">Blog</NavLink>
                     <MdArrowDropDown />
                 </div>
+                <NavLink className='transition-transform hover:scale-110 cursor-pointer' to="/about">About</NavLink>
                 <NavLink className='transition-transform hover:scale-110 cursor-pointer' to="/contact">Contact</NavLink>
             </div>
             <div className='flex gap-2 items-center'>
