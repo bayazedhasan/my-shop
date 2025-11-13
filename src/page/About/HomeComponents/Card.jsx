@@ -3,7 +3,7 @@ import React from 'react';
 const Card = ({ carts }) => {
     return (
         <>
-            <div className='flex flex-col justify-center items-center gap-3 container mx-auto px-42 pt-15'>
+            <div data-aos="fade-up" className='flex flex-col justify-center items-center gap-3 container mx-auto px-42 pt-15'>
                 <h1 className='text-[#253D4E] text-5xl font-bold'>What We Provide?</h1>
                 <img src="/assets/wave.png" alt="" />
             </div>

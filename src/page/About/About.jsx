@@ -24,7 +24,7 @@ useEffect(()=>{
     .then(data=> setSecondCarts(data))
 },[])
     return (
-        <div>
+        <div >
             <ThirdHeader></ThirdHeader>
             <Banner></Banner>
             <Card carts={carts}></Card>

@@ -83,7 +83,7 @@ export default function BannerCounters({
   }
 
   return (
-    <section className="py-16 container mx-auto px-1">
+    <section data-aos="fade-up" className="py-16 container mx-auto px-1">
       <div
         ref={containerRef}
         className="relative rounded-xl overflow-hidden text-white"

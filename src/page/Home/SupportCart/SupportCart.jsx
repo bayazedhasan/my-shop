@@ -6,7 +6,7 @@ import { FaCircleDollarToSlot } from 'react-icons/fa6';
 
 const SupportCart = () => {
     return (
-        <div className='flex justify-between items-center container mx-auto px-24'>
+        <div  data-aos="fade-up" className='flex justify-between items-center container mx-auto px-24'>
             <div className='flex flex-col justify-center items-center border border-gray-200  w-75 p-5'>
             <div className='p-2'>
                 <CiDeliveryTruck color='#29A56C' size={55}/>

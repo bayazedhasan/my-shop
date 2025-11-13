@@ -5,7 +5,7 @@ import { MdChevronRight } from 'react-icons/md';
 const ThirdHeader = () => {
     return (
         <>
-        <div className=' container mx-auto px-12 p-4'>
+        <div data-aos="fade-up" className=' container mx-auto px-12 p-4'>
             <div className='flex items-center gap-4'>
             <div className='flex items-center gap-1 transition-transform hover:scale-110 cursor-pointer text-[#3BB77E] hover:text-[#FECC40]'>
                 <FiHome />

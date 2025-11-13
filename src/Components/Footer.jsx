@@ -5,7 +5,7 @@ import { FiPhoneCall } from 'react-icons/fi';
 const Footer = () => {
     return (
         <>
-            <div className='flex  gap-13 justify-between pt-25 px-6 container mx-auto'>
+            <div data-aos="fade-up" className='flex  gap-13 justify-between pt-25 px-6 container mx-auto'>
                 <div className='grid gap-4'>
                     <div className='pb-1'>
                         <img src="/assets/logo.png" alt="" />

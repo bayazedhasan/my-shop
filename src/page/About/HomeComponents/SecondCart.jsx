@@ -1,7 +1,7 @@
 
 const SecondCart = ({ secoundCarts }) => {
     return (
-        <div className="container mx-auto px-6 pt-15 grid grid-cols-5 gap-5">
+        <div data-aos="fade-up" className="container mx-auto px-6 pt-15 grid grid-cols-5 gap-5">
             {
                 secoundCarts.map(cart => (
                     <div className="flex items-center gap-4 border bg-[#F4F6FA] border-none rounded-lg p-5">

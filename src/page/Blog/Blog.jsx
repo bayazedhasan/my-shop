@@ -8,7 +8,7 @@ const Blog = () => {
     
     return (
 
-        <div>
+        <div data-aos="fade-up">
             <ShardBlog></ShardBlog>
             <Footer></Footer>
         </div>

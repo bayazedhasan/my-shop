@@ -9,7 +9,7 @@ const FourthBanner = () => {
         });
     };
     return (
-        <div className='inset-0 bg-cover bg-center bg-no-repeat rounded-xl mx-6 ' style={{ backgroundImage: "url('/assets/banner-10.png')" }}>
+        <div data-aos="fade-up" className='inset-0 bg-cover bg-center bg-no-repeat rounded-xl mx-6 ' style={{ backgroundImage: "url('/assets/banner-10.png')" }}>
             <div className=" flex justify-between items-center container mx-auto px-24 mt-10 " >
             <div>
                 <div>

@@ -5,7 +5,7 @@ import ImageCarousel from './ImageCarousel';
 const Banner = () => {
     return (
         <>
-            <div className='flex items-center gap-10 justify-center container mx-auto px-42 mt-15'>
+            <div data-aos="fade-up" className='flex items-center gap-10 justify-center container mx-auto px-42 mt-15'>
                 <div className=''>
                     <img className='w-400 rounded-lg' src="/assets/about-1.png" alt="" />
                 </div>

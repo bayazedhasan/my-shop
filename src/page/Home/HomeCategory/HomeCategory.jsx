@@ -9,7 +9,7 @@ const HomeCategory = () => {
                 Categories.map(category=>(
                     <Link to={"/shop"}>
                     <div>
-                        <div className=' relative flex flex-col items-center border bg-[#F7F7F7] border-none p-5 '>
+                        <div  data-aos="fade-up" className=' relative flex flex-col items-center border bg-[#F7F7F7] border-none p-5 '>
                             <img className='w-20 p-1' src={category.image} alt="" />
                             <h3 className='text-[#4B5966] text-md font-semibold'>{category.name}</h3>
                             <p className='text-[#878383] text-xs'>{category.items} Items</p>

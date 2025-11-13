@@ -9,7 +9,7 @@ const ThirdBanner = () => {
         });
     };
     return (
-        <div className='mt-[-60px] pb-30'>
+        <div data-aos="fade-up" className='mt-[-60px] pb-30'>
             <div className='flex flex-col justify-center items-center gap-3 container mx-auto px-42 pt-15'>
                 <h1 className='text-[#253D4E] text-5xl font-bold'>Our Team</h1>
                 <img src="/assets/wave.png" alt="" />

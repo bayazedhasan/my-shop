@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { MdCall } from 'react-icons/md';
+import { Link } from 'react-router';
 
 const TopHeader = () => {
     return (
@@ -18,10 +19,11 @@ const TopHeader = () => {
                 <p className='text-gray-500 text-xs font-semibold'>World's Fastest Online Shopping Destination</p>
             </div>
             <div className='flex items-center gap-5 text-gray-500 text-xs font-semibold'>
-                <p>Help?</p>
-                <p>Trac Order?</p>
+                
+                <Link to={"/contact"}><p>Help?</p></Link>
+                <Link to={"/shop/:id"}><p>Trac Order?</p></Link>
                 <p>English</p>
-                <p>Contact Us</p>
+                <Link to={"/contact"}><p>Contact Us</p></Link>
             </div>
         </div>
         </div>

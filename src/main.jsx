@@ -10,6 +10,7 @@ import Blog from './page/Blog/Blog';
 import ShopNow from './page/ShopNow/ShopNow';
 import Home from './page/Home/Home';
 import SingleProductPage from './page/Home/SingleProductPage/SingleProductPage';
+import Deals from './page/Deals/Deals';
 
 
 const router = createBrowserRouter([
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path:"/shop/:id",
         element: <SingleProductPage></SingleProductPage>
+      },
+      {
+        path:"/deals",
+        element: <Deals></Deals>
       },
     ],
   },

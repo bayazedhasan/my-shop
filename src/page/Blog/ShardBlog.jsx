@@ -7,7 +7,7 @@ const ShardBlog = () => {
     const {blogs} = useData()
     return (
 
-        <div className='container mx-auto px-24'>
+        <div data-aos="fade-up" className='container mx-auto px-24'>
             <div className='flex justify-between items-center pt-12'>
                 <SectionHeading heading={"Latest"} colorHeading={"Blog"} discription={"We tackle interesting topics every day in 2023."}></SectionHeading>
                 <Link to={"/blog"}><p className='text-[#4B5966] hover:text-[#5CAF90] '>All Blogs</p></Link>

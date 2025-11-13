@@ -6,7 +6,7 @@ const CollectionCart = () => {
   const { collectionCart } = useData();
 
   return (
-    <div className="container mx-auto px-24 py-16 grid grid-cols-3 gap-6">
+    <div  data-aos="fade-up" className="container mx-auto px-24 py-16 grid grid-cols-3 gap-6">
       {collectionCart.map((collection) => (
         <div
           key={collection.id}

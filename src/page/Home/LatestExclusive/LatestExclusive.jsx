@@ -5,7 +5,7 @@ const LatestExclusive = () => {
     return (
         <div className='container mx-auto px-24'>
             <div style={{ backgroundImage: `url(${bg})` }} className=' bg-cover h-[80vh]'>
-                <div className='flex flex-col justify-center items-end text-right container mx-auto px-24 h-full'>
+                <div  data-aos="fade-up" className='flex flex-col justify-center items-end text-right container mx-auto px-24 h-full'>
                     <h2 className='text-2xl text-white font-semibold'>30% off sale</h2>
                     <h1 className='text-5xl leading-18 text-white font-bold'>Latest Exclusive <br />
                         Summer Collection</h1>

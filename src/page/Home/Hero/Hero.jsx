@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <div>
             <div style={{ backgroundImage: `url(${bg})` }} className='container mx-auto px-24 my-10 bg-cover h-[70vh]'>
-                <div className='flex flex-col justify-center h-full'>
+                <div data-aos="fade-up" className='flex flex-col justify-center h-full'>
                     <h2 className='cp text-xl font-semibold'>70% Off For This Winter</h2>
                     <h1 className='text-5xl leading-18 text-[#253D4E] font-bold'>Bigest Sale For Winter <br />
                         Man & Woman</h1>
