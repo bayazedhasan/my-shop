@@ -15,14 +15,9 @@
     "sole": "Polyvinyl Chloride",
     "width": "Medium",
     "outerMaterial": "A-Grade Standard Quality",
-    "weightOptions": [
-      "250g",
-      "500g",
-      "1kg",
-      "2kg"
-    ],
+    "weightOptions": ["250g", "500g", "1kg", "2kg"],
     "quantity": 1,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/product-images/34_1.jpg"
+    "image": "https://i.postimg.cc/655b8cy3/0082b6e6e1f922950ede127ed8d5e85b-jpg-960x960q80-jpg.webp"
   },
   {
     "id": 2,
@@ -40,14 +35,9 @@
     "sole": "N/A",
     "width": "Regular Fit",
     "outerMaterial": "Cotton",
-    "weightOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "weightOptions": ["S", "M", "L", "XL"],
     "quantity": 1,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/product-images/35_2.jpg"
+    "image": "https://i.postimg.cc/1RKYR25Q/6b8957f49804d8792fb9dfd878bd3200.jpg"
   },
   {
     "id": 3,
@@ -65,11 +55,9 @@
     "sole": "N/A",
     "width": "Standard",
     "outerMaterial": "Leather & Steel",
-    "weightOptions": [
-      "Standard Size"
-    ],
+    "weightOptions": ["Standard Size"],
     "quantity": 1,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/product-images/32_1.jpg"
+    "image": "https://i.postimg.cc/Kvvp1fRK/Audemars-Piguet-Royal-Oak-Gold.webp"
   },
   {
     "id": 4,
@@ -87,14 +75,9 @@
     "sole": "N/A",
     "width": "Slim Fit",
     "outerMaterial": "Satin",
-    "weightOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "weightOptions": ["S", "M", "L", "XL"],
     "quantity": 1,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/product-images/38_1.jpg"
+    "image": "https://i.postimg.cc/HssvrzV3/images.jpg"
   },
   {
     "id": 5,
@@ -112,11 +95,9 @@
     "sole": "N/A",
     "width": "Medium",
     "outerMaterial": "Plastic Frame",
-    "weightOptions": [
-      "Standard"
-    ],
+    "weightOptions": ["Standard"],
     "quantity": 1,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/product-images/54_1.jpg"
+    "image": "https://i.postimg.cc/XNgDNm7B/images-(1).jpg"
   },
   {
     "id": 6,
@@ -134,12 +115,9 @@
     "sole": "N/A",
     "width": "Compact",
     "outerMaterial": "Plastic & Glass",
-    "weightOptions": [
-      "250g",
-      "500g"
-    ],
+    "weightOptions": ["250g", "500g"],
     "quantity": 1,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/product-images/50_1.jpg"
+    "image": "https://i.postimg.cc/BZCwZkQK/images-(2).jpg"
   },
   {
     "id": 7,
@@ -157,12 +135,9 @@
     "sole": "N/A",
     "width": "Standard",
     "outerMaterial": "Egg Shell",
-    "weightOptions": [
-      "12 pcs",
-      "24 pcs"
-    ],
+    "weightOptions": ["12 pcs", "24 pcs"],
     "quantity": 1,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/product-images/52_1.jpg"
+    "image": "https://i.postimg.cc/4NN2YPmm/images-(3).jpg"
   },
   {
     "id": 8,
@@ -180,14 +155,9 @@
     "sole": "N/A",
     "width": "Regular Fit",
     "outerMaterial": "Denim",
-    "weightOptions": [
-      "30",
-      "32",
-      "34",
-      "36"
-    ],
+    "weightOptions": ["30", "32", "34", "36"],
     "quantity": 1,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/product-images/37_1.jpg"
+    "image": "https://i.postimg.cc/8PKKMv6b/jeans3-533x.webp"
   },
   {
     "id": 9,
@@ -205,11 +175,9 @@
     "sole": "N/A",
     "width": "Standard",
     "outerMaterial": "Stainless Steel",
-    "weightOptions": [
-      "Standard"
-    ],
+    "weightOptions": ["Standard"],
     "quantity": 1,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/product-images/39_1.jpg"
+    "image": "https://i.postimg.cc/qMMDNwzN/images-(4).jpg"
   },
   {
     "id": 10,
@@ -221,20 +189,15 @@
     "discount": 25,
     "sku": "DR95",
     "stock": "In Stock",
-    "closure": "Zipper",
     "ratings": 635,
     "description": "Light and comfortable floral printed maxi dress, perfect for casual and party wear.",
+    "closure": "Zipper",
     "sole": "N/A",
     "width": "Free Size",
     "outerMaterial": "Cotton Blend",
-    "weightOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "weightOptions": ["S", "M", "L", "XL"],
     "quantity": 1,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/product-images/54_1.jpg"
+    "image": "https://i.postimg.cc/nccSX2C1/images-(5).jpg"
   },
   {
     "id": 11,
@@ -252,11 +215,9 @@
     "sole": "N/A",
     "width": "Medium",
     "outerMaterial": "Polycarbonate Frame",
-    "weightOptions": [
-      "Standard"
-    ],
+    "weightOptions": ["Standard"],
     "quantity": 1,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/product-images/38_1.jpg"
+    "image": "https://i.postimg.cc/022Xznbf/images-(6).jpg"
   },
   {
     "id": 12,
@@ -274,10 +235,8 @@
     "sole": "N/A",
     "width": "Compact",
     "outerMaterial": "Plastic & Wax",
-    "weightOptions": [
-      "6 pcs set"
-    ],
+    "weightOptions": ["6 pcs set"],
     "quantity": 1,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/product-images/50_1.jpg"
+    "image": "https://i.postimg.cc/QxxYFmHm/images-(7).jpg"
   }
 ]

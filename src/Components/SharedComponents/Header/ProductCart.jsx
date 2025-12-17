@@ -25,7 +25,7 @@ const ProductCart = ({ product }) => {
               <img
                 src={product?.image}
                 alt={product?.name}
-                className="h-full"
+                className="h-50 w-full"
               />
             </div>
             <div className="p-4 flex flex-col justify-between flex-1">
