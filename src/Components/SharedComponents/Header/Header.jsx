@@ -1,9 +1,13 @@
 import React from 'react';
 import SecondHeader from './SecondHeader';
 import TopHeader from './TopHeader';
+import { useSelector } from 'react-redux';
 
 
 const Header = () => {
+
+    const products = useSelector((state)=>state.cart.products)
+    
     return (
 
 <>
@@ -73,7 +77,7 @@ const Header = () => {
                         <div className="w-5 indicator flex gap-1 ">
                             <img src="/assets/icon-cart.png" alt="" />
                             <h1 className='text-gray-400'>Cart</h1>
-                            <span className="badge badge-xs  bg-[#29A56C] indicator-item text-[#FFFFFF]">2</span>
+                            <span className="badge badge-xs  bg-[#29A56C] indicator-item text-[#FFFFFF]">{products.length}</span>
                         </div>
                         <div
                             tabIndex={0}

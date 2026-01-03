@@ -1,13 +1,19 @@
-import React from 'react';
-import { Link, useParams } from 'react-router';
+import { useParams } from 'react-router';
 import useData from '../../../Hooks/useData';
 import SectionHeading from '../../../Components/SharedComponents/Header/SectionHeading';
 import { FaStar } from 'react-icons/fa';
 import ProductCart from '../../../Components/SharedComponents/Header/ProductCart';
+import { addToCart } from '../../../redux/features/cart/cartSlice';
+import { useDispatch } from 'react-redux';
+import React, { useState } from 'react';
+
+
 
 const SingleProductPage = () => {
     const { id } = useParams();
     const { products } = useData();
+    const [qty, setQty] = useState(1);
+    const dispatch = useDispatch();
     if (!products || products.length === 0) {
         return <p>Loading...</p>;
     }
@@ -17,8 +23,13 @@ const SingleProductPage = () => {
         return <p>Product not found</p>;
     }
 
+
+    const handleAddToCart = (p) => {
+        dispatch(addToCart(p))
+    }
+
     return (
-       <div>
+        <div>
             <div>
                 <div className='flex items-center gap-8 my-12 justify-center'>
                     <img className='w-120 rounded-md' src={findProduct?.image} alt="" />
@@ -52,20 +63,45 @@ const SingleProductPage = () => {
 
                         <div className='flex gap-2 items-center'>
                             <p className='font-semibold mr-3 my-4'>Size : </p>
-                            {findProduct?.weightOptions.map(w => (
-                                <div>
-                                    <p ><span className='font-normal text-gray-600 btn btn-xs'>{w}</span></p>
+                            {findProduct?.weightOptions.map((w, index) => (
+                                <div key={index}>
+                                    <span className='font-normal text-gray-600 btn btn-xs'>{w}</span>
                                 </div>
                             ))}
+
                         </div>
                         <div className='flex gap-2 my-4'>
                             <div className='flex gap-4 border border-gray-200 px-8 py-2 rounded-md'>
-                                <p>-</p>
-                                <p>1</p>
-                                <p>+</p>
+                                <button
+                                    onClick={() => {
+                                        if (qty > 1) {
+                                            setQty(qty - 1);
+                                        }
+                                    }}
+                                >
+                                    -
+                                </button>
+
+                                <p>{qty}</p>
+
+                                <button
+                                    onClick={() => {
+                                        if (qty < 5) {
+                                            setQty(qty + 1);
+                                        }
+                                    }}
+                                >
+                                    +
+                                </button>
                             </div>
+
                             <div>
-                                <button className='btn bgp text-gray-700'>Add To Cart</button>
+                                <button
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        handleAddToCart(findProduct)
+                                    }}
+                                    className='btn bgp text-gray-700'>Add To Cart</button>
                             </div>
                         </div>
                     </div>
@@ -76,7 +112,10 @@ const SingleProductPage = () => {
                 <SectionHeading heading={"Top Rted"} colorHeading={"Seleing Products"} discription={"High-quality denim jeans for men with a comfortable"}></SectionHeading>
                 <div className='grid grid-cols-5 my-12'>
                     {
-                        products.slice(0,5).map(p => <ProductCart product={p}></ProductCart>)
+                        products.slice(0, 5).map(p => (
+                            <ProductCart key={p.id} product={p} />
+                        ))
+
                     }
                 </div>
             </div>
