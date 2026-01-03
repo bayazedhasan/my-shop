@@ -18,9 +18,10 @@ const cartSlice = createSlice({
         
             if(!isExist) {
                 state.products.push({...action.payload, quantity: 1})
+                alert("<<<Add to Cart Successfull>>>")
             }
             else{
-                alert("Item already added");
+                alert("!!Item already added!!");
             }
             state.selectedItems = setSelectedItems(state);
             state.totalPrice = setTotalPrice(state);
