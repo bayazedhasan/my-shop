@@ -15,6 +15,7 @@ import CartPage from './page/Cart/CartPage';
 import CheckoutPage from './page/Checkout/CheckoutPage';
 import OrderSuccess from './page/Checkout/OrderSuccess';
 import PaymentPage from './page/Checkout/PaymentPage';
+import PaymentMethodSelection from './page/Checkout/PaymentMethodSelection';
 import Login from './Components/Login/Login';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
       {
         path: "/order-success",
         element: <OrderSuccess></OrderSuccess>
+      },
+      {
+        path: "/payment-select",
+        element: <PaymentMethodSelection></PaymentMethodSelection>
       },
       {
         path: "/payment",

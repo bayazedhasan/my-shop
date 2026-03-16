@@ -66,8 +66,8 @@ const CheckoutPage = () => {
                 if (!buyNowItem) dispatch(clearCart());
                 navigate('/order-success');
             } else {
-                // For bKash and Nagad, go to payment page first
-                navigate('/payment', {
+                // For bKash and Nagad, go to payment method selection first
+                navigate('/payment-select', {
                     state: {
                         method: paymentMethod,
                         total: grandTotal,
@@ -335,27 +335,27 @@ const CheckoutPage = () => {
                             </div>
                         </div>
                         {/* Place Order Button */}
-                    <button
-                        onClick={handlePlaceOrder}
-                        disabled={loading}
-                        className="w-full py-4 mt-5 rounded-xl text-white font-bold text-lg tracking-wide transition-all duration-300 hover:opacity-90 active:scale-98 shadow-lg disabled:opacity-70 flex items-center justify-center gap-3"
-                        style={{ background: 'linear-gradient(135deg, #29A56C, #1e7d52)' }}
-                    >
-                        {loading ? (
-                            <>
-                                <svg className="animate-spin h-5 w-5 text-white" viewBox="0 0 24 24" fill="none">
-                                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
-                                </svg>
-                                Processing...
-                            </>
-                        ) : (
-                            <>
-                                <FaLock size={16} />
-                                {paymentMethod === 'cod' ? 'Place Order' : 'Proceed to Pay'} · ${grandTotal.toFixed(2)}
-                            </>
-                        )}
-                    </button>
+                        <button
+                            onClick={handlePlaceOrder}
+                            disabled={loading}
+                            className="w-full py-4 mt-5 rounded-xl text-white font-bold text-lg tracking-wide transition-all duration-300 hover:opacity-90 active:scale-98 shadow-lg disabled:opacity-70 flex items-center justify-center gap-3"
+                            style={{ background: 'linear-gradient(135deg, #29A56C, #1e7d52)' }}
+                        >
+                            {loading ? (
+                                <>
+                                    <svg className="animate-spin h-5 w-5 text-white" viewBox="0 0 24 24" fill="none">
+                                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+                                    </svg>
+                                    Processing...
+                                </>
+                            ) : (
+                                <>
+                                    <FaLock size={16} />
+                                    {paymentMethod === 'cod' ? 'Place Order' : 'Proceed to Pay'} · ${grandTotal.toFixed(2)}
+                                </>
+                            )}
+                        </button>
 
                         <p className="text-center text-xs text-gray-400 mt-3">
                             🔒 Your information is encrypted and secure
@@ -433,7 +433,7 @@ const CheckoutPage = () => {
                             ))}
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
