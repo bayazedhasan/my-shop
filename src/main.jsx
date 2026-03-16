@@ -11,7 +11,13 @@ import ShopNow from './page/ShopNow/ShopNow';
 import Home from './page/Home/Home';
 import SingleProductPage from './page/Home/SingleProductPage/SingleProductPage';
 import Deals from './page/Deals/Deals';
-
+import CartPage from './page/Cart/CartPage';
+import CheckoutPage from './page/Checkout/CheckoutPage';
+import OrderSuccess from './page/Checkout/OrderSuccess';
+import PaymentPage from './page/Checkout/PaymentPage';
+import Login from './Components/Login/Login';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
 
 const router = createBrowserRouter([
   {
@@ -19,46 +25,61 @@ const router = createBrowserRouter([
     element: <Root></Root>,
     children: [
       {
-        index:true,
+        index: true,
         element: <Home></Home>
       },
       {
-        path:"/about",
+        path: "/about",
         element: <About></About>
       },
       {
-        path:"/contact",
+        path: "/contact",
         element: <Contact></Contact>
       },
       {
-        path:"/blog",
+        path: "/blog",
         element: <Blog></Blog>
       },
       {
-        path:"/shop",
+        path: "/shop",
         element: <ShopNow></ShopNow>
       },
       {
-        path:"/shop/:id",
+        path: "/shop/:id",
         element: <SingleProductPage></SingleProductPage>
       },
       {
-        path:"/deals",
+        path: "/deals",
         element: <Deals></Deals>
+      },
+      {
+        path: "/cart",
+        element: <CartPage></CartPage>
+      },
+      {
+        path: "/checkout",
+        element: <CheckoutPage></CheckoutPage>
+      },
+      {
+        path: "/order-success",
+        element: <OrderSuccess></OrderSuccess>
+      },
+      {
+        path: "/payment",
+        element: <PaymentPage></PaymentPage>
       },
     ],
   },
+  {
+    path: "/login",
+    element: <Login></Login>
+  }
 ]);
-import { Provider } from 'react-redux'
-import { store } from './redux/store';
+
 const root = document.getElementById("root");
 
 ReactDOM.createRoot(root).render(
   <Provider store={store}>
-    <RouterProvider router={router} />,
+    <RouterProvider router={router} />
   </Provider>
-  
 );
-
-
-

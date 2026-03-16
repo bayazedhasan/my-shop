@@ -3,17 +3,15 @@ import useData from '../../../Hooks/useData';
 import SectionHeading from '../../../Components/SharedComponents/Header/SectionHeading';
 import { FaStar } from 'react-icons/fa';
 import ProductCart from '../../../Components/SharedComponents/Header/ProductCart';
-import { addToCart } from '../../../redux/features/cart/cartSlice';
-import { useDispatch } from 'react-redux';
 import React, { useState } from 'react';
-
-
+import ProductOptionsModal from '../../../Components/SharedComponents/ProductOptionsModal/ProductOptionsModal';
 
 const SingleProductPage = () => {
     const { id } = useParams();
     const { products } = useData();
-    const [qty, setQty] = useState(1);
-    const dispatch = useDispatch();
+    const [modalOpen, setModalOpen] = useState(false);
+    const [modalMode, setModalMode] = useState('cart'); // 'cart' | 'buynow'
+
     if (!products || products.length === 0) {
         return <p>Loading...</p>;
     }
@@ -23,10 +21,10 @@ const SingleProductPage = () => {
         return <p>Product not found</p>;
     }
 
-
-    const handleAddToCart = (p) => {
-        dispatch(addToCart(p))
-    }
+    const openModal = (mode) => {
+        setModalMode(mode);
+        setModalOpen(true);
+    };
 
     return (
         <div>
@@ -68,40 +66,25 @@ const SingleProductPage = () => {
                                     <span className='font-normal text-gray-600 btn btn-xs'>{w}</span>
                                 </div>
                             ))}
-
                         </div>
+
                         <div className='flex gap-2 my-4'>
-                            <div className='flex gap-4 border border-gray-200 px-8 py-2 rounded-md'>
-                                <button
-                                    onClick={() => {
-                                        if (qty > 1) {
-                                            setQty(qty - 1);
-                                        }
-                                    }}
-                                >
-                                    -
-                                </button>
-
-                                <p>{qty}</p>
-
-                                <button
-                                    onClick={() => {
-                                        if (qty < 5) {
-                                            setQty(qty + 1);
-                                        }
-                                    }}
-                                >
-                                    +
-                                </button>
-                            </div>
-
                             <div>
                                 <button
                                     onClick={(e) => {
                                         e.stopPropagation();
-                                        handleAddToCart(findProduct)
+                                        openModal('cart');
                                     }}
-                                    className='btn bgp text-gray-700'>Add To Cart</button>
+                                    className="flex-1 w-50 flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-sm border-2 border-green-500 text-green-600 hover:bg-green-50 transition-all duration-200">Add To Cart</button>
+                            </div>
+                            <div>
+                                <button
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        openModal('buynow');
+                                    }}
+                                    className="flex-1 flex w-50 items-center justify-center gap-2 py-3 rounded-xl font-bold text-sm text-white transition-all duration-200 hover:opacity-90 shadow-md"
+                            style={{ background: 'linear-gradient(135deg, #29A56C, #1e7d52)' }}>Buy Now</button>
                             </div>
                         </div>
                     </div>
@@ -115,10 +98,17 @@ const SingleProductPage = () => {
                         products.slice(0, 5).map(p => (
                             <ProductCart key={p.id} product={p} />
                         ))
-
                     }
                 </div>
             </div>
+
+            {/* Product Options Modal */}
+            <ProductOptionsModal
+                product={findProduct}
+                isOpen={modalOpen}
+                onClose={() => setModalOpen(false)}
+                mode={modalMode}
+            />
         </div>
     );
 };
