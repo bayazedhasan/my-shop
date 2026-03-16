@@ -64,7 +64,7 @@ const CheckoutPage = () => {
         setTimeout(() => {
             if (paymentMethod === 'cod') {
                 if (!buyNowItem) dispatch(clearCart());
-                navigate('/order-success');
+                navigate('/order-success', { state: { paymentMethod: 'cod' } });
             } else {
                 // For bKash and Nagad, go to payment method selection first
                 navigate('/payment-select', {

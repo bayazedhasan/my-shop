@@ -113,7 +113,7 @@ const PaymentPage = () => {
             // After showing success, clear cart and redirect
             setTimeout(() => {
                 if (!buyNowItem) dispatch(clearCart());
-                navigate('/order-success');
+                navigate('/order-success', { state: { paymentMethod: method } });
             }, 2500);
         }, 1800);
     };
@@ -255,8 +255,8 @@ const PaymentPage = () => {
                                     }}
                                     placeholder="e.g. 8FG92K1DXA"
                                     className={`w-full px-4 py-3 rounded-xl border text-gray-800 placeholder-gray-300 focus:outline-none focus:ring-4 transition-all ${errors.trxId
-                                            ? 'border-red-400 focus:ring-red-100'
-                                            : `border-gray-200 focus:border-[${brand.color}] ${brand.ringClass}`
+                                        ? 'border-red-400 focus:ring-red-100'
+                                        : `border-gray-200 focus:border-[${brand.color}] ${brand.ringClass}`
                                         }`}
                                     style={
                                         !errors.trxId

@@ -1,9 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router';
+import { Link, useLocation } from 'react-router';
 import { FaCheckCircle, FaShoppingBag, FaHome } from 'react-icons/fa';
+
+const PAYMENT_LABELS = {
+    bkash: { label: 'bKash', color: '#E2136E' },
+    nagad: { label: 'Nagad', color: '#F7941D' },
+    cod: { label: 'Cash on Delivery', color: '#29A56C' },
+};
 
 const OrderSuccess = () => {
     const [show, setShow] = useState(false);
+    const { state } = useLocation();
+
+    // Determine the payment method from route state, fallback to cod
+    const methodKey = state?.paymentMethod ?? 'cod';
+    const payment = PAYMENT_LABELS[methodKey] ?? PAYMENT_LABELS.cod;
 
     useEffect(() => {
         const timer = setTimeout(() => setShow(true), 100);
@@ -36,7 +47,7 @@ const OrderSuccess = () => {
                     Your order has been confirmed and will be delivered to your address soon. You'll receive an email confirmation shortly.
                 </p>
 
-                {/* Order details placeholder */}
+                {/* Order details */}
                 <div className="bg-gray-50 rounded-2xl p-4 mb-8 text-left">
                     <div className="flex justify-between text-sm text-gray-600 mb-2">
                         <span>Order Status</span>
@@ -48,7 +59,9 @@ const OrderSuccess = () => {
                     </div>
                     <div className="flex justify-between text-sm text-gray-600">
                         <span>Payment</span>
-                        <span className="text-gray-800 font-semibold">Cash on Delivery</span>
+                        <span className="font-semibold" style={{ color: payment.color }}>
+                            {payment.label}
+                        </span>
                     </div>
                 </div>
 
@@ -76,3 +89,4 @@ const OrderSuccess = () => {
 };
 
 export default OrderSuccess;
+
